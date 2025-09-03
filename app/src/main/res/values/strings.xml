@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_textfields">TextFields</string>
+    <string name="nav_buttons">Botones</string>
+    <string name="nav_selection">Selección</string>
+    <string name="nav_lists">Listas</string>
+    <string name="nav_info">Información</string>
+
+    <!-- TextFields Fragment -->
+    <string name="title_text_fields">EditText (TextField)</string>
+    <string name="explanation_text_fields">Los EditText permiten al usuario ingresar y editar texto. Son fundamentales para formularios y entradas de datos.</string>
+    <string name="hint_edit_text">Escribe algo aquí…</string>
+    <string name="btn_submit_text">Enviar texto</string>
+
+    <!-- Buttons Fragment -->
+    <string name="title_buttons">Botones</string>
+    <string name="explanation_buttons">Los botones permiten al usuario realizar acciones con un simple clic. Existen botones normales y de imagen.</string>
+    <string name="btn_normal_text">Botón Normal</string>
+    <string name="btn_image_desc">Botón de imagen</string>
+    <string name="press_button_message">Presiona un botón...</string>
+    <!-- Agrega estos strings en res/values/strings.xml -->
+    <string name="normal_button_pressed">Botón normal presionado</string>
+    <string name="image_button_pressed">Botón de imagen presionado</string>
+    <string name="shared_text_format">Texto compartido: %s</string>
+    <string name="progress_format">Progreso: %d%%</string>
+    <string name="progress_initial">Progreso: 0%%</string>
+
+    <!-- Selection Fragment -->
+    <string name="title_selection">Elementos de Selección</string>
+    <string name="explanation_selection">CheckBox, RadioButton y Switch permiten al usuario seleccionar opciones de diferentes formas.</string>
+    <string name="checkbox_text">CheckBox Opción</string>
+    <string name="radio1_text">Opción 1</string>
+    <string name="radio2_text">Opción 2</string>
+    <string name="switch_text">Switch</string>
+    <string name="btn_show_selection">Mostrar selección</string>
+    <!-- Agrega estos strings en res/values/strings.xml -->
+    <string name="selection_result">Selección: </string>
+    <string name="checkbox_selected">CheckBox seleccionado</string>
+    <string name="checkbox_not_selected">CheckBox no seleccionado</string>
+    <string name="no_radio_selected">Ningún radio seleccionado</string>
+    <string name="switch_on">Switch ON</string>
+    <string name="switch_off">Switch OFF</string>
+
+    <!-- Lists Fragment -->
+    <string name="title_lists">Listas</string>
+    <string name="explanation_lists">Las listas (RecyclerView) muestran elementos en forma de lista desplazable. Perfectas para mostrar múltiples items.</string>
+    <string name="item_prefix">Item</string>
+
+    <!-- Info Fragment -->
+    <string name="title_info">Elementos de Información</string>
+    <string name="explanation_info">TextView, ImageView y ProgressBar muestran información al usuario de diferentes maneras.</string>
+    <string name="shared_text_label">Texto compartido:</string>
+    <string name="progress_text">Progreso:</string>
+    <string name="btn_start_progress">Iniciar progreso</string>
+    <string name="image_desc">Imagen de ejemplo</string>
+
+
+</resources>
