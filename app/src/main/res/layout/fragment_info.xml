@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -7,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -15,56 +18,84 @@
             android:text="@string/title_info"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center"/>
+            android:layout_marginBottom="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/explanation_info"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp" />
 
-        <!-- TextView de ejemplo -->
         <TextView
-            android:id="@+id/tv_shared_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/shared_text_label"
-            android:layout_marginBottom="16dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-        <!-- ImageView de ejemplo -->
-        <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@android:drawable/ic_dialog_info"
-            android:contentDescription="@string/image_desc"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- ProgressBar de ejemplo -->
         <TextView
-            android:id="@+id/tv_progress"
+            android:id="@+id/txt_shared_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay texto compartido"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_border" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/progress_text"
-            android:layout_marginBottom="8dp"/>
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
         <ProgressBar
-            android:id="@+id/progress_bar"
+            android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="100"
-            android:progress="0"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txt_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/progress_initial"
+            android:layout_marginBottom="24dp" />
 
         <Button
             android:id="@+id/btn_start_progress"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_start_progress"/>
+            android:text="@string/btn_start_progress"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/image_desc"
+            android:src="@android:drawable/ic_dialog_info"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            app:tint="#FF6200EE"
+            tools:ignore="UseAppTint"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/txt_image_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toca el ícono para más información"
+            android:textSize="14sp"
+            android:textColor="#FF6200EE"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="visible" />
+
 
     </LinearLayout>
 </ScrollView>

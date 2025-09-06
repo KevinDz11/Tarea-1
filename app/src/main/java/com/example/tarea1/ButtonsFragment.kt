@@ -24,10 +24,11 @@ class ButtonsFragment : Fragment() {
 
         val normalButton: Button = view.findViewById(R.id.btn_normal)
         val imageButton: ImageButton = view.findViewById(R.id.btn_image)
-        val tvResult: TextView = view.findViewById(R.id.tv_button_result)
+
+        // Cambia esto al ID correcto que tengas en tu XML
+        val tvResult: TextView = view.findViewById(R.id.txt_button_result) // o el ID que uses
 
         normalButton.setOnClickListener {
-
             tvResult.text = getString(R.string.normal_button_pressed)
             Toast.makeText(context, getString(R.string.normal_button_pressed), Toast.LENGTH_SHORT).show()
         }

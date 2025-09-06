@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Tarea1</string>
+
     <string name="nav_textfields">TextFields</string>
     <string name="nav_buttons">Botones</string>
     <string name="nav_selection">Selección</string>
@@ -53,6 +55,10 @@
     <string name="progress_text">Progreso:</string>
     <string name="btn_start_progress">Iniciar progreso</string>
     <string name="image_desc">Imagen de ejemplo</string>
+
+    <string name="image_info_text">Este es un ícono de información. Representa detalles adicionales sobre la aplicación. ¡Bienvenido a Tarea1!</string>
+    <string name="tap_icon_info">Toca el ícono para más información</string>
+
 
 
 </resources>

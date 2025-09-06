@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -23,10 +24,14 @@ class InfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val sharedViewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
-        val tvSharedText: TextView = view.findViewById(R.id.tv_shared_text)
-        val progressBar: ProgressBar = view.findViewById(R.id.progress_bar)
-        val tvProgress: TextView = view.findViewById(R.id.tv_progress)
+        val tvSharedText: TextView = view.findViewById(R.id.txt_shared_text)
+        val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
+        val tvProgress: TextView = view.findViewById(R.id.txt_progress)
         val btnStartProgress: Button = view.findViewById(R.id.btn_start_progress)
+
+        // NUEVO: Referencias para la ImageView y texto de información
+        val imageView: ImageView = view.findViewById(R.id.imageView)
+        val txtImageInfo: TextView = view.findViewById(R.id.txt_image_info)
 
         sharedViewModel.sharedText.observe(viewLifecycleOwner) { text ->
             if (!text.isNullOrEmpty()) {
@@ -48,6 +53,25 @@ class InfoFragment : Fragment() {
                         tvProgress.text = getString(R.string.progress_format, i)
                     }
                 }
+            }.start()
+        }
+
+        // NUEVO: Click listener para la ImageView
+        imageView.setOnClickListener {
+            // Alternar la visibilidad del texto informativo
+            if (txtImageInfo.visibility == View.VISIBLE) {
+                txtImageInfo.visibility = View.GONE
+                txtImageInfo.text = "Toca el ícono para más información"
+            } else {
+                txtImageInfo.visibility = View.VISIBLE
+                txtImageInfo.text = "Este es un ícono de información. " +
+                        "Representa detalles adicionales sobre la aplicación. " +
+                        "¡Bienvenido a Tarea1!"
+            }
+
+            // Opcional: Agregar una animación
+            imageView.animate().scaleX(1.1f).scaleY(1.1f).setDuration(200).withEndAction {
+                imageView.animate().scaleX(1.0f).scaleY(1.0f).setDuration(200).start()
             }.start()
         }
     }

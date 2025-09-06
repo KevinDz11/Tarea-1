@@ -20,7 +20,7 @@ class ListsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
         // Crear datos de ejemplo
         val itemList = List(20) { "Item ${it + 1}" }
