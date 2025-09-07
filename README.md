@@ -7,7 +7,7 @@ Esta guía describe el funcionamiento de las distintas secciones de la aplicaci�
 La navegación se realiza a través de una barra de íconos en la parte inferior de la pantalla, donde cada ícono corresponde a una sección específica. 
 La aplicación se inicia por defecto en la sección "Campo de Texto".
 
-<img width="180" height="400" alt="image" src="https://github.com/user-attachments/assets/f5ec0406-d2bc-452e-a323-a05f4de4a309" />
+<img width="288" height="640" alt="image" src="https://github.com/user-attachments/assets/f5ec0406-d2bc-452e-a323-a05f4de4a309" />
 
 1. Sección de Campo de Texto (Text Field)
 En esta sección, encontrarás una breve descripción de los campos de texto editables.
